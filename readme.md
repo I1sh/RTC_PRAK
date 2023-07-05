@@ -72,7 +72,7 @@ source devel/setup.bash
 Для запуска всех нижеописаных пакетов одной командой можно воспользоваться launch файлом:
 
 ```shell
-TODO
+roslaunch ls2d ls2d.launch 
 ```
 
 ---
