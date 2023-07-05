@@ -4,7 +4,7 @@
 
   <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 0 0 0 map sensor_base_link 50" > </node>
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ls2d)/config/lazerscan_viz.rviz" > </node>
-  <node pkg="ls2d" type="ls2d_init_node" name="ls2d_init_node"> </node>
+  <node pkg="ls2d" type="sensor_init_node" name="sensor_init_node"> </node>
 
 
 </launch>
