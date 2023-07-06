@@ -91,10 +91,3 @@ add_executable(sensor_init_node ${SENSOR_INIT_NODE} ${PRISM_LIB})
 target_include_directories(sensor_init_node PUBLIC include/prism src/)
 target_link_libraries (sensor_init_node ${catkin_LIBRARIES} Threads::Threads)
 add_dependencies(sensor_init_node ${catkin_EXPORTED_TARGETS})
-
-
-add_executable(talker src/talker.cpp)
-target_link_libraries(talker ${catkin_LIBRARIES})
-add_dependencies(talker ${catkin_EXPORTED_TARGETS})
-#install(TARGETS sensor_init_node
-#        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
